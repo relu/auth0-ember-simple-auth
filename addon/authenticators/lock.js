@@ -172,8 +172,8 @@ export default BaseAuthenticator.extend({
    * @param  {Error}  error object
    * @return {Promise}     Promise
    */
-  onAuthError(/* error */){
-    return new Ember.RSVP.Promise();
+  onAuthError(error){
+    return new Ember.RSVP.reject(error);
   },
 
   restore (data) {
