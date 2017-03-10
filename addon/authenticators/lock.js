@@ -1,7 +1,7 @@
 /* globals Auth0Lock, b64utos, KJUR */
 import Ember from 'ember';
 import BaseAuthenticator from 'ember-simple-auth/authenticators/base';
-import getOwner from 'ember-getowner-polyfill';
+const { getOwner } = Ember;
 
 var read = Ember.computed.readOnly,
     bool = Ember.computed.bool;
